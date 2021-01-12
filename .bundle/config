@@ -1,0 +1,3 @@
+---
+BUNDLE_SER: "path vendor/bundle clear "
+BUNDLE_PATH: "vendor/bundle"
