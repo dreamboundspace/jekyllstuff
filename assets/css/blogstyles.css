@@ -1,14 +1,34 @@
-.blogsections {
-    font-family: 'Rokkitt', serif;
-    margin: auto;
-}
 @media screen and (min-width: 975px) {
-    div.blogsections {
-      width: 50%;
+    div.posts {
+      width: 75%;
     }
   }
  @media screen and (max-width: 974px) {
-    div.blogsections {
+    div.posts {
       width: 90%;
     }
+}
+.posts {
+    margin: auto;
+    font-family: 'Rokkitt', serif;
+}
+.posttitles {
+    font-family: 'Rokkitt', serif;
+    margin: auto;
+    font-weight: bolder;
+    font-size: 45px;
+    padding-bottom: 15px;
+}
+.posttag {
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.postdate {
+    margin-top: -5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.blogsections {
+    font-family: 'Rokkitt', serif;
 }
