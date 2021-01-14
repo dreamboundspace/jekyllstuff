@@ -1,5 +1,14 @@
 .blogsections {
     font-family: 'Rokkitt', serif;
-    max-width: 60%;
     margin: auto;
+}
+@media screen and (min-width: 975px) {
+    div.blogsections {
+      width: 50%;
+    }
+  }
+ @media screen and (max-width: 974px) {
+    div.blogsections {
+      width: 90%;
+    }
 }
