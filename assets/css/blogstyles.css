@@ -16,8 +16,17 @@
     font-family: 'Rokkitt', serif;
     margin: auto;
     font-weight: bolder;
-    font-size: 45px;
     padding-bottom: 15px;
+}
+@media screen and (min-width: 975px) {
+    div.posttitles {
+      font-size: 45px;
+    }
+  }
+@media screen and (max-width: 974px) {
+    div.posttitles {
+      font-size: 20px;
+    }
 }
 .posttag {
     margin-top: -10px;
