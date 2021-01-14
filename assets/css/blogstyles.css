@@ -1,14 +1,14 @@
 @media screen and (min-width: 975px) {
-    div.posts {
+    div.blogposts {
       width: 75%;
     }
   }
  @media screen and (max-width: 974px) {
-    div.posts {
+    div.blogposts {
       width: 90%;
     }
 }
-.posts {
+.blogposts {
     margin: auto;
     font-family: 'Rokkitt', serif;
 }
