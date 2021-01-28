@@ -3,55 +3,33 @@ layout: default
 ---
 
 <div class="home">
-  
-  {{ content }}
-
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
 
 
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
-      </div>
-    {%- endif %}
-
-  {%- endif -%}
-
+  <h3><a href=”{{ site.url}}/posts/”>Recent Posts</a></h3>
+{% for post in paginator.posts %}
+<article>
+ {% if post.link %}
+ <h2 class=”link-post”><a href=”{{ site.url }}{{ post.url }}” title=”{{ post.title }}”>{{ post.title }}</a> <a href=”{{ post.link }}” target=”_blank” title=”{{ post.title }}”><i class=”fa fa-link”></i></h2>
+ {% else %}
+ <h2><a href=”{{ site.url }}{{ post.url }}” title=”{{ post.title }}”>{{ post.title }}</a></h2>
+ <p>{{ post.excerpt | strip_html | truncate: 300 }}</p>
+ {% endif %}
+</article>
+{% endfor %}
+{% if paginator.total_pages > 1 %}
+<div class=”pagination”>
+ <ul>
+{% if paginator.previous_page %}
+ <li class=”prev”><a href=”/posts/{% if paginator.previous_page != 1 %}page{{ paginator.previous_page }}{% endif %}”>Previous</a></li>
+{% endif %}
+ <li><a {% if paginator.page == 1 %}class=”active” {% endif %}href=”/posts/”>1</a></li>
+{% for count in (2..paginator.total_pages) %}
+ <li><a {% if paginator.page == count %}class=”active” {% endif %}href=”/posts/page{{ count }}”>{{ count }}</a></li>
+{% endfor %}
+{% if paginator.next_page %}
+ <li class=”next”><a href=”/posts/page{{ paginator.next_page }}”>Next</a></li>
+{% endif %}
+ </ul>
+</div>
+{% endif %}
 </div>
