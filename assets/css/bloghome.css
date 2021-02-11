@@ -12,6 +12,11 @@
       width: 90%;
     }
 }
+@media screen and (max-width: 974px) {
+    a.excerpt {
+      font-size: 12px;
+    }
+}
 .post-link {
     font-family: 'Bebas Neue', cursive;
     font-weight: 500;
