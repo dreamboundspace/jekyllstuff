@@ -1,0 +1,41 @@
+.home {
+    margin: auto;
+}
+@media screen and (min-width: 975px) {
+    div.home {
+      width: 75%;
+      padding-bottom: 50px;
+    }
+  }
+ @media screen and (max-width: 974px) {
+    div.home {
+      width: 90%;
+    }
+}
+.post-link {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+    font-size: 30px;
+}
+.post-link:hover {
+    color: rgb(73, 73, 73);
+    text-decoration: line-through;
+}
+.numberpage {
+    color: rgb(73, 73, 73);
+    font-family: 'Bebas Neue', cursive;
+}
+.numberpage:hover {
+    color: #f89fb2;
+}
+.currentnumberpage {
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: underline;
+}
+.prev_next {
+    color: rgb(73, 73, 73);
+    font-family: 'Bebas Neue', cursive;
+}
+.prev_next:hover {
+    color: #f89fb2;
+}

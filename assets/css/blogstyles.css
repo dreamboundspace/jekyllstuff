@@ -1,6 +1,3 @@
-.home {
-    margin: auto;
-}
 @media screen and (min-width: 975px) {
     div.blogposts {
       width: 75%;
