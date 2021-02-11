@@ -50,3 +50,7 @@
 p {
     margin-bottom: 15px;
 }
+.postimage {
+  margin: auto;
+  float: right;
+}

@@ -17,7 +17,7 @@ layout: default
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%Y-%m-%d" -%}
       {%- for post in posts -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <span class="post-meta">{{ post.author }} :: {{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
@@ -33,7 +33,7 @@ layout: default
   {% if paginator.total_pages > 1 %}
   <div class="pagination">
   {% if paginator.previous_page %}
-    <a class="prev_next" href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+    <a class="prev" href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
   {% else %}
     <span></span>
   {% endif %}
@@ -49,7 +49,7 @@ layout: default
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a class="prev_next" href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+    <a class="next" href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
   {% else %}
     <span></span>
   {% endif %}

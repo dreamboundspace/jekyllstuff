@@ -12,19 +12,22 @@
       width: 90%;
     }
 }
-@media screen and (max-width: 974px) {
-    a.excerpt {
-      font-size: 12px;
-    }
-}
 .post-link {
     font-family: 'Bebas Neue', cursive;
     font-weight: 500;
     font-size: 30px;
 }
 .post-link:hover {
-    color: rgb(73, 73, 73);
-    text-decoration: line-through;
+    background-color: #16161d;
+    border-left: 2px solid #16161d;
+    color: #eff0d2;
+    border-right: 2px solid #16161d
+}
+@media screen and (max-width: 974px) {
+    a.excerpt {
+      font-size: 15px;
+      width: 45%;
+    }
 }
 .numberpage {
     color: rgb(73, 73, 73);
@@ -37,10 +40,17 @@
     font-family: 'Bebas Neue', cursive;
     text-decoration: underline;
 }
-.prev_next {
+.prev {
     color: rgb(73, 73, 73);
     font-family: 'Bebas Neue', cursive;
 }
-.prev_next:hover {
-    color: #f89fb2;
+.prev:hover {
+    color: darkorange;
+}
+.next {
+    color: rgb(73, 73, 73);
+    font-family: 'Bebas Neue', cursive;
+}
+.next:hover {
+    color: lightskyblue;
 }
