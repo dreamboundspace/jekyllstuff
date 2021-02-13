@@ -3,6 +3,7 @@ layout: posts
 title:  "dreambound"
 date:   2021-01-15 13:06:22 -0500
 tag: the first one
+category: yo
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis sem sit amet fringilla venenatis. Maecenas sodales neque a est euismod, ut finibus massa pharetra. Quisque accumsan aliquam urna, ut mattis nisi pulvinar et. Donec pretium eget nunc id efficitur. Fusce finibus orci quis pretium varius. Fusce tellus tortor, faucibus finibus sapien ut, feugiat pulvinar neque. Nullam placerat tellus eu nibh interdum aliquet. Duis tincidunt pulvinar erat, et elementum nunc feugiat nec. Duis blandit ligula nec est imperdiet, in mattis erat convallis. Etiam interdum nibh justo, scelerisque varius sem hendrerit eu. Pellentesque vel nisl id urna faucibus finibus. Cras et ultricies est.
 
