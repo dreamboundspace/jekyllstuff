@@ -1,0 +1,17 @@
+.tag-title {
+    margin: auto;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bolder;
+    font-size: 50px;
+}
+@media screen and (min-width: 975px) {
+    div.tag-title {
+      width: 80%;
+      padding-bottom: 0px;
+    }
+  }
+ @media screen and (max-width: 974px) {
+    div.tag-title {
+      width: 95%;
+    }
+}
